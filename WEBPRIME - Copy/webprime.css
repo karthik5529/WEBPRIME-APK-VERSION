@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+body {
+    background-color: rgb(17, 17, 17);
+}
+.head h1{
+/** TEXT GRADIENT */ color: #d96a21; background-image: -webkit-radial-gradient(circle, #d96a21 0%, #9c27b0 50%, #0ff107 100%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;    
+font-family: monospace;
+overflow: hidden; /* Ensures the content is not revealed until the animation */
+border-right: .15em solid gray; /* The typwriter cursor */
+white-space: nowrap; /* Keeps the content on a single line */
+letter-spacing: .15em; /* Adjust as needed */
+animation: 
+  typing 3.5s steps(30, end) infinite,
+  blink-caret .5s step-end infinite;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:linear-gradient(to right, #121FCF 0%, #CF1512 100%);; }
+  }
+.body h1 {    
+    /** TEXT GRADIENT */ color: #d96a21; background-image: -webkit-linear-gradient(0deg, #d96a21 46%, #0dea0e 90%, #0ff107 99%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;                
+    margin-left: 30%;
+}
+.body h4{
+    margin-top: -7px;
+    background: #FCEABB;
+background: linear-gradient(to right, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-left: 40%;
+}
+.button {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgb(145, 92, 182);
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+    margin-left: 40%;
+}
+.button:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(144, 7, 242, 0.4);
+}
+@media all and (max-width:600px){
+    .button , .body h4 , .body h1{
+        margin-left: 3%;
+    }
+    .button {
+        color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(144, 7, 242, 0.4);
+    }
+}
+.body h2{
+    background: #00FF00;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+.body h2 {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(to left, #00FF00 0%, #FF0000 100%);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+.box{
+    border: 5px solid orangered;
+    width: 80%;
+    margin-left: 10%;
+}
+.box h3{
+    font-weight: bold;
+    font-size: x-large;
+    background: #00FF00;
+background: linear-gradient(to left, #00FF00 0%, #00FFFF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.box h4{
+    font-weight: bold;
+    margin-left: 0;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    color: #00FFFF;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #000;
+}
+h7{
+    color: red;
+font-weight: bold;
+font-size: 2rem;
+}
+h3{
+    font-weight: bold;
+    font-size: large;
+    background: #00FF00;
+background: linear-gradient(to left, #00FF00 0%, #00FFFF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.center {
+    display: table;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  #social-test {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+    h2 {
+      color: #fff;
+      font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+      font-weight: 100;
+    }
+    .social {
+      padding-left: 0px;
+    }
+    li {
+      color: rgba(167, 146, 129, 0.6);
+      list-style-type: none;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      padding: 1%;
+      border: 1px solid rgba(167, 146, 129, 0.4);
+      cursor: pointer;
+      margin-left: 10px;
+      margin-bottom: 20px;
+      transition: ease .3s;
+      &:hover {
+        color: rgba(167, 146, 129, 1);
+        border: 1px solid rgba(167, 146, 129, 1);
+      }
+    }
+  }
+  
+  .social:hover > li {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .social:hover > li:hover {
+    opacity: 1;
+  }
+.fb:hover{
+    background-color: #0165E1;
+}
+.twtr:hover{
+    background-color: #1DA1F2
+}
+.insta:hover{
+  background-color :  rgb(228, 64, 95);
+}
+.git:hover{
+    background-color:  #000000;
+}
+.yt:hover{
+    background-color: #FF0000;
+}
+.whatsap:hover{
+    background-color: #128C7E;
+}
+@media all and (max-width:600px){
+    .fb{
+        background-color: #0165E1;
+    }
+    .twtr{
+        background-color: #1DA1F2
+    }
+    .insta{
+      background-color :  rgb(228, 64, 95);
+    }
+    .git{
+        background-color:  #000000;
+    }
+    .yt{
+        background-color: #c02424;
+    }
+    .whatsap{
+        background-color: #128C7E;
+    }
+}
+.end h4 , h2{
+    color: gray;
+    font-weight: bold;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:magenta;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}

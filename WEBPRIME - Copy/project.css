@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+body{
+    background: rgb(2,0,36);
+}
+.head h1{
+    /** TEXT GRADIENT */ color: #d96a21; background-image: -webkit-radial-gradient(circle, #d96a21 0%, #9c27b0 50%, #0ff107 100%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;    
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid gray; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end) infinite,
+      blink-caret .5s step-end infinite;
+      font-weight: bolder;
+      font-size: 3rem;
+    }
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color:linear-gradient(to right, #121FCF 0%, #CF1512 100%);; }
+      }
+.body h1{
+    background: #121FCF;
+background: linear-gradient(to right, #2e39db 0%, #CF1512 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: "Kanit", sans-serif;
+}
+.body h3{
+    color: beige;
+    font-family:Arial, Helvetica, sans-serif;
+}
+h2{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h4{
+    font-weight: bold;
+    color: #d96a21;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:magenta;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}

@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*::selection{
+    color: aquamarine;
+}
+.title{
+    background-color: black;
+}
+h1{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: magenta;
+}
+span{
+    color: yellow;
+}
+li{
+    margin-top: -20px;
+}
+ul{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    display: inline-block;
+    margin: 7%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+ul a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+ul a:hover{
+    color: orangered;
+    transition: 2s;
+}
+ul h3 {
+    animation: blink 5s linear infinite;
+}
+@keyframes blink {
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 1;
+        transform:rotateX(60deg);
+        transition: 3s;
+    }
+}
+@media all and (max-width : 600px) {
+    ul{
+        font-size: small;
+        margin: 5%;
+    }
+    .title  img {
+        height: 40px;
+        width: 40px;
+    }
+    h1{
+        font-size: larger;
+    }
+}
+.body{
+    background-color: gray;
+    padding-bottom: 3%;
+}
+.logo{
+    display: inline-block;
+    margin-top: 8px;
+}
+h2{
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.body li {
+    margin-top: 1%;
+    border: 3px double black;
+    text-decoration: none;
+    display: flex;
+  
+}
+.body h2 {
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.body .h4 {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.body li h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.likes , .followers , .comments {
+    margin-left: 15%;
+}
+
+.likes:hover , .followers:hover , .comments:hover{
+    cursor: pointer;
+    color: blue;
+    transition: 3s;
+}
+
+.likesec{
+    background-color: rgb(184, 41, 41);
+    border: 3px solid black;
+}
+.likesec img {
+    margin-top: 1%;
+}
+.likesec h3{
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+  }
+  
+.likesec h4{
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden; 
+    border-right: .15em solid black; 
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 10s steps(40, end) 3,
+    blink-caret 1s step-end 3;
+}
+
+.followsec {
+    background-color: rgb(140, 49, 49);
+    border: 3px solid black;
+}
+.followsec img {
+    margin-top: 1%;
+}
+.followsec h3{
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+.followsec h4{
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden; 
+    border-right: .15em solid black; 
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 10s steps(40, end) 3,
+    blink-caret 1s step-end 3;
+}
+
+.commentsec {
+    background-color: rgb(129, 17, 17);
+    padding-bottom: 3%;
+    border: 3px solid black;
+}
+.commentsec img {
+    margin-top: 1%;
+}
+.commentsec h3{
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+.commentsec h4{
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden; 
+    border-right: .15em solid black; 
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 10s steps(40, end) 3,
+    blink-caret 1s step-end 3;
+}
+
+@media all and (max-width : 550px) {
+    .body ul img {
+        height: 30px;
+        width: 30px;
+    }
+    .body ul h3 {
+        font-size: smaller;
+    }
+    .likesec h4 , .followsec h4 , .commentsec h4{
+        font-size: small;
+    }
+    .likesec h3 , .followsec h3 , .commentsec h3{
+        font-size: large;
+    }
+
+}
+
+@media all and (max-width : 400px) {
+    .likesec h4 , .followsec h4 , .commentsec h4{
+        font-size: 10px;
+    }
+    .likesec h3 , .followsec h3 , .commentsec h3{
+        font-size: large;
+    }
+}
+.end{
+    background-color: orange;
+}
+.end h2 {
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+.end h3 {
+    margin-bottom: 2%;
+}
+.end h4 {
+    padding-bottom: 3%;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}

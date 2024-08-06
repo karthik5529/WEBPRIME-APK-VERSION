@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    background-color: orangered;
+    padding-bottom: 30px;
+}
+.title h1{
+    padding-top: 20px;
+    animation: fall1 3s linear infinite; 
+
+}
+.title c{
+    color: whitesmoke;
+    animation: fall 3s linear infinite; 
+    padding-top: 0px;
+}
+
+@keyframes fall {
+    0% , 40%{
+        color: black;
+    }
+}
+
+.self{
+    height: 500px;
+    width: 70%;
+    margin-top: 20px;
+    overflow: scroll;
+    margin-left: 15%;
+    background-color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.end{
+    margin-top: 30px;
+    height: 400px;
+    width: 100%;
+    background-color: orange;
+}
+.end h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.links a:hover{
+    cursor: pointer;
+    color: black;
+}
+.mainpage{
+    padding-left: 30%;
+}
+
+@media all and (max-width:630px) {
+.end{
+height: 500px;
+}
+.mainpage{
+    padding-left: 5%;
+}
+}

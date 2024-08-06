@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIO-DATA</title>
+    <link rel="stylesheet" href="demoz.css">
+</head>
+<body>
+    <center>
+    <h1>WEB-DEVELOPMENT MEGA MARATHON</h1></center>
+    <h3>-BY KARTHIK</h3><br><br><br><br><br>
+    <form method="post" action="https://script.google.com/macros/s/AKfycby3H6XmKTzF8iP-7VKBY4mvyL1FIJt6bMRk63N1PTo9MHQTwX54rLDnpi9lKsc-7PeIBw/exec" name="BIODATA" class="biodata">
+        <fieldset>
+            <legend>BIO-DATA</legend>
+            <fieldset>
+                <legend>PERSONAL-DATA</legend>
+            <label for="name">NAME</label> <input type="text" name="NAME" placeholder="abc" required><br><br>
+            <label for="DOB">D.O.B</label> <input type="date" name="DOB" required ><br><br>
+            <label for="email">E-MAIL</label> <input type="email" name="E-MAIL" placeholder="abc@gmail.com" required> <br><br>
+            <label for="GENDER">GENDER==></label> MALE <input type="radio" name="GENDER" required> FEMALE <input type="radio" name="GENDER"> <br><br>
+            <label for="nationality">NATIONALITY</label><input type="text" name="NATIONALITY" placeholder="indian" required><br><br>
+            <label for="phone-num">PHONE-NUMBER</label> <input type="number" name="PH-NO" placeholder="1234567890" required><br><br>
+            <label for="FNAME">FATHER-NAME</label><input type="text" placeholder="ABC" required name="FATHER-NAME"><br><br></fieldset>
+        <fieldset>
+            <legend>COURSE-DATA</legend>
+            <label for="course">COURSE YOU WANT</label><br><br>PYTHON <input type="checkbox" name="PYTHON">
+           <br> <br>JAVA <input type="checkbox" name="JAVA" disabled onmouseenter="alrt()">
+            <br><br>JAVASCRIPT <input type="checkbox" name="JAVASCRIPT">
+            <br><br>HTML&CSS <input type="checkbox" name="HTML&CSS">
+            <br><br>MSQL <input type="checkbox" name="MYSQL">
+            <br><br>C# <input type="checkbox" name="C#" onmouseenter="alrt()">
+            <br><br>C++ <input type="checkbox" name="C++" disabled onmouseenter="alrt()">
+            <br><br>DART <input type="checkbox"name="DART"  disabled onmouseenter="alrt()">
+            <br><br>PERL <input type="checkbox"name="PERL"  disabled onmouseenter="alrt()">
+            <br><br>WEB-DEV(PACKAGE OF 8) <input type="checkbox" name="PACK(8)">
+            <br><br><br>
+            <label for="exp" name="exp">EXPERIENCE IN CODING</label><br><br>BEGINNER <input type="radio" required name="exp" > <br><br>MODRATE <input type="radio" name="exp"> <br><br>EXPERT <input type="radio" name="exp">
+        </fieldset>
+        <fieldset>
+            <legend>SUBMIT</legend>
+            <button type="submit" >SUBMIT</button><br><br><br>
+            IF ANY ISSUE YOU ENCOUNTER <br><textarea name="REPORT" cols="30" rows="10" placeholder="SAY YOUR ISSUE"></textarea><br><button type="submit" onclick="mes()">SUBMIT</button> <button type="reset">RESET</button>
+    
+        </fieldset>
+        </fieldset>
+    </form>
+    <script>
+        const alrt = () =>{
+            alert("SORRY THIS COURSE IS NOT AVAILABLE RIGHT NOW !!!")
+        }
+        const mes = () => {
+            alert("THANKS FOR YOUR REPORT")
+        }
+
+
+    </script>
+</body>
+</html>
